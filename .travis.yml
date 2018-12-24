@@ -12,3 +12,10 @@ script:
 - ng lint
 - npm run test-headless
 - ng build --prod --base-href https://surajstranger11.github.io/Angular/CourseProject/
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/CourseProject
+  on:
+    branch: master
