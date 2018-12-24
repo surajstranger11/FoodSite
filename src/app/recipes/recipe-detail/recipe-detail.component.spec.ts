@@ -16,7 +16,7 @@ describe('RecipeDetailComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(RecipeDetailComponent);
     component = fixture.componentInstance;
-    //fixture.detectChanges();
+    // fixture.detectChanges();
   });
 
   it('should create', () => {

@@ -19,11 +19,11 @@ describe('RecipeItemComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(RecipeItemComponent);
     component = fixture.componentInstance;
-    
+
   });
 
   it('should create', () => {
-    //fixture.detectChanges();
+    // fixture.detectChanges();
     expect(component).toBeTruthy();
   });
 });
