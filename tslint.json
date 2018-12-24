@@ -110,11 +110,12 @@
     "unified-signatures": true,
     "variable-name": false,
     "whitespace": [
-      true,
+      false,
       "check-branch",
       "check-decl",
       "check-operator",
-      "check-separator"
+      "check-separator",
+      "check-type"
     ],
     "no-output-on-prefix": true,
     "use-input-property-decorator": true,
