@@ -11,7 +11,7 @@ before_script:
 script:
 - ng lint
 - npm run test-headless
-- ng build --prod --base-href https://surajstranger11.github.io/Angular/CourseProject/
+- ng build --prod --base-href https://surajstranger11.github.io/FoodSite/
 deploy:
   provider: pages
   skip_cleanup: true
