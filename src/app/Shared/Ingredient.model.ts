@@ -1,4 +1,4 @@
-export class Ingredient{
+export class Ingredient {
     // public name:string;
     // public amount:number;
 
@@ -6,5 +6,5 @@ export class Ingredient{
     //     this.name=name;
     //     this.amount=amount;
     // }
-    constructor(public name:string,public amount:number){}
+    constructor(public name:string,public amount:number) {}
 }

@@ -13,7 +13,7 @@ export class RecipesComponent implements OnInit {
 
   ngOnInit() {
   }
-  recipeReceived(recipeRecevier:Recipe){
+  recipeReceived(recipeRecevier:Recipe) {
     this.recipeReceive=recipeRecevier;
 
   }
