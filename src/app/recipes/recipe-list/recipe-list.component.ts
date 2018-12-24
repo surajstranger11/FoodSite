@@ -11,7 +11,7 @@ export class RecipeListComponent implements OnInit {
    new Recipe('Chilli Chicken Recipe','Home made chilli Chicken',
    'https://c1.staticflickr.com/1/144/319252903_bc92dbc703_b.jpg'),
    new Recipe('Sweet Pulao','Bengali style Sweet Pulao',
-   'https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?cs=srgb&dl=burger-chips-dinner-70497.jpg&fm=jpg')
+   'https://cdn.pixabay.com/photo/2014/12/21/23/28/recipe-575434__340.png')
  ];
  @Output() recipeWasSelected=new EventEmitter<Recipe>();
   constructor() { }
