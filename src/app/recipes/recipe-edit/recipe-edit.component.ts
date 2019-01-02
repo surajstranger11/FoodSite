@@ -16,13 +16,13 @@ editMode=false;
 
   ngOnInit() {
     this.router.params.subscribe(
-      (param:Params)=>{
+      (param:Params)=> {
         this.index=+param['id'];
         this.editMode= param['id']!=null;
-        //this.recipe=this.recipeservice.getRecipeByID(this.index);
+        // this.recipe=this.recipeservice.getRecipeByID(this.index);
 
       }
-        
+
            );
   }
 

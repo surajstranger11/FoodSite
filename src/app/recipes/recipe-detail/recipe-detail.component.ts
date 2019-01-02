@@ -13,13 +13,13 @@ export class RecipeDetailComponent implements OnInit {
 
   RecipeFinallyRecived: Recipe;
   id:number;
-  constructor(private shoppingservice:ShoppinglistService, private router:ActivatedRoute, 
+  constructor(private shoppingservice:ShoppinglistService, private router:ActivatedRoute,
     private recipeservice:RecipeService ) {
   }
 
   ngOnInit() {
     this.router.params.subscribe(
-      (param:Params)=>{
+      (param:Params)=> {
         this.id=+param['id'];
         this.RecipeFinallyRecived=this.recipeservice.getRecipeByID(this.id);
       }

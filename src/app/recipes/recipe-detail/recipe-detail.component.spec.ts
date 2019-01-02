@@ -8,7 +8,7 @@ import { RecipeDetailComponent } from './recipe-detail.component';
 describe('RecipeDetailComponent', () => {
   let component: RecipeDetailComponent;
   let fixture: ComponentFixture<RecipeDetailComponent>;
-  let recipeDe:DebugElement;
+  // let recipeDe:DebugElement;
   // let recipeEl:any;
 
   beforeEach(async(() => {
@@ -21,7 +21,7 @@ describe('RecipeDetailComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(RecipeDetailComponent);
     component = fixture.componentInstance;
-     //recipeDe  = fixture.debugElement.query(By.css('.Recipe'));
+     // recipeDe  = fixture.debugElement.query(By.css('.Recipe'));
     // recipeEl = recipeDe.nativeElement;
     // fixture.detectChanges();
   });
