@@ -22,6 +22,6 @@ amount:number;
   const nameInput=this.namedInputRef.nativeElement.value;
   const amountInput=this.amountInputRef.nativeElement.value;
 const ingredient=new Ingredient(nameInput,amountInput);
-this.shoppinglistservice.addIngredients(ingredient);
+this.shoppinglistservice.addIngredient(ingredient);
 }
 }

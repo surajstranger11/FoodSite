@@ -11,8 +11,12 @@ export class ShoppinglistService {
     new Ingredient('Garlic',50),new Ingredient('Ginger',20)
   ];
   constructor() { }
-  addIngredients(ingredient:Ingredient) {
+  addIngredient(ingredient:Ingredient) {
     this.ingredients.push(ingredient);
+    this.ingredientadded.emit(this.ingredients.slice());
+  }
+  addIngredients(ingredient:Ingredient[]) {
+    this.ingredients.push(...ingredient);
     this.ingredientadded.emit(this.ingredients.slice());
   }
   getIngredients() {

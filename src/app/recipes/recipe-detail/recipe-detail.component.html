@@ -20,18 +20,22 @@
   <li><a class="dropdown-item" href="#"></a>Delete Recipe</li>
 </ul> -->
 <div class="dropdown-menu" >
-  <a class="dropdown-item" href="#">Add Ingredients</a>
-   <a class="dropdown-item" href="#">Edit recipe</a>
-   <a class="dropdown-item" href="#">Delete Recipe</a> 
+  <a class="dropdown-item" (click)="AddIngredientsToRecipe()" style="cursor:pointer">Add Ingredients</a>
+   <a class="dropdown-item" style="cursor:pointer" [routerLink]="['edit']">Edit recipe</a>
+   <a class="dropdown-item" style="cursor:pointer">Delete Recipe</a> 
     </div>
 </div>
 <div class="row">
   <div class="col-12">
-    Description of Recipe
+    {{RecipeFinallyRecived.decription}}
   </div>
 </div>
 <div class="row">
-    <div class="col-12">
-      Ingredients
+    <div class="col-12" >
+      <ul class="list-group">
+        <li class="list-group-item"
+        *ngFor="let ingredient of RecipeFinallyRecived.ingredients">
+      {{ingredient.name}}-{{ingredient.amount}}</li>
+      </ul>
     </div>
   </div>

@@ -21,7 +21,7 @@ describe('RecipeDetailComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(RecipeDetailComponent);
     component = fixture.componentInstance;
-    // recipeDe  = fixture.debugElement.query(By.css('.Recipe'));
+     //recipeDe  = fixture.debugElement.query(By.css('.Recipe'));
     // recipeEl = recipeDe.nativeElement;
     // fixture.detectChanges();
   });
