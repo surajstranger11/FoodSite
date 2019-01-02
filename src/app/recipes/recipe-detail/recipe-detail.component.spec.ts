@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import {DebugElement, Predicate} from '@angular/core';
 import {} from 'jasmine';
 import { By } from '@angular/platform-browser';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { RecipeDetailComponent } from './recipe-detail.component';
 
@@ -13,6 +14,7 @@ describe('RecipeDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      // imports: [ RouterTestingModule ],
       declarations: [ RecipeDetailComponent ]
     })
     .compileComponents();
