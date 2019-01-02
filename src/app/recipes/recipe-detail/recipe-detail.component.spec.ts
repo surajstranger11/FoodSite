@@ -14,7 +14,7 @@ describe('RecipeDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      // imports: [ RouterTestingModule ],
+       imports: [ RouterTestingModule ],
       declarations: [ RecipeDetailComponent ]
     })
     .compileComponents();
