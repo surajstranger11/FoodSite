@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import {
+  SocialLoginModule,  AuthServiceConfig,  GoogleLoginProvider,  FacebookLoginProvider,} from "angular-6-social-login";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -15,6 +17,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 import { HomeComponent } from './home/home.component';
+import { SigninComponent } from './signin/signin.component';
+
+export function getAuthServiceConfigs() {
+  let config = new AuthServiceConfig(
+      [
+        {
+          id: FacebookLoginProvider.PROVIDER_ID,
+          provider: new FacebookLoginProvider("207481033539950")
+        },
+        {
+          id: GoogleLoginProvider.PROVIDER_ID,
+          // provider: new GoogleLoginProvider("400646937789-humr06d93ibm9c35mc398gcti1s7lsrl.apps.googleusercontent.com")
+          provider: new GoogleLoginProvider("400646937789-ro45rolvpk12he8fmc2hl8stpkvcgu7u.apps.googleusercontent.com")
+        }
+      ]
+  );
+  return config;
+}
 
 @NgModule({
   declarations: [
@@ -29,13 +49,18 @@ import { HomeComponent } from './home/home.component';
     DropdownDirective,
     RecipeStartComponent,
     RecipeEditComponent,
-    HomeComponent
+    HomeComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,AppRoutingModule
+    FormsModule,AppRoutingModule,
+    SocialLoginModule
   ],
-  providers: [],
+  providers: [{
+    provide: AuthServiceConfig,
+    useFactory: getAuthServiceConfigs
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

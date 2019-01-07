@@ -12,19 +12,18 @@ export class AppComponent implements OnInit {
 //   onNavigate(feature:string) {
 // this.loadedFeature=feature;
 //   }
-ngOnInit() {
-  // const hintPromise = googleyolo.hint({
-    const hintPromise = googleyolo.retrieve({
-    supportedAuthMethods: [
-       'https://accounts.google.com'
-    ],
-    supportedIdTokenProviders: [
-    {
-       uri: 'https://accounts.google.com',
-      // clientId: '400646937789-ro45rolvpk12he8fmc2hl8stpkvcgu7u.apps.googleusercontent.com'
-       clientId: '400646937789-humr06d93ibm9c35mc398gcti1s7lsrl.apps.googleusercontent.com'
-    }
-   ]
- });
+ngOnInit() {// const hintPromise = googleyolo.hint({
+//     const hintPromise = googleyolo.retrieve({
+//     supportedAuthMethods: [
+//        'https://accounts.google.com'
+//     ],
+//     supportedIdTokenProviders: [
+//     {
+//        uri: 'https://accounts.google.com',
+//       // clientId: '400646937789-ro45rolvpk12he8fmc2hl8stpkvcgu7u.apps.googleusercontent.com'
+//        clientId: '400646937789-humr06d93ibm9c35mc398gcti1s7lsrl.apps.googleusercontent.com'
+//     }
+//    ]
+//  });
 }
 }

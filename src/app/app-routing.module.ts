@@ -6,6 +6,7 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+import { SigninComponent } from './signin/signin.component';
 
 
 const appRoutes:Routes=[
@@ -20,7 +21,8 @@ const appRoutes:Routes=[
     { path:'shopping-list', component:ShoppingListComponent, children:
     [
         {path:'edit', component:ShoppingEditComponent}
-    ]}
+    ]},
+    {path:'signin', component:SigninComponent},
 ];
 
 @NgModule({
