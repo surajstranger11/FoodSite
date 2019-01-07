@@ -13,7 +13,8 @@ export class AppComponent implements OnInit {
 // this.loadedFeature=feature;
 //   }
 ngOnInit() {
-  const hintPromise = googleyolo.hint({
+  // const hintPromise = googleyolo.hint({
+    const hintPromise = googleyolo.retrieve({
     supportedAuthMethods: [
        'https://accounts.google.com'
     ],
