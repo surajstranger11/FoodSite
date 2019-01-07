@@ -10,7 +10,7 @@ import { SigninComponent } from './signin/signin.component';
 
 
 const appRoutes:Routes=[
-    { path:'', redirectTo:'/recipes', pathMatch:'full'},
+    { path:'', redirectTo:'/signin', pathMatch:'full'},
     { path:'recipes', component:RecipesComponent, children:
 [
     {path:'', component:RecipeStartComponent},
