@@ -24,14 +24,14 @@ export class ShoppinglistService {
   getIngredients() {
     return this.ingredients.slice();
   }
-  getIngredient(index:number){
+  getIngredient(index:number) {
  return this.ingredients[index];
   }
   upadteIngredient(index:number, ingredient:Ingredient) {
     this.ingredients[index]=ingredient;
     this.ingredientadded.next(this.ingredients.slice());
   }
-  deleteIngredients(index:number){
+  deleteIngredients(index:number) {
     this.ingredients.splice(index,1);
     this.ingredientadded.next(this.ingredients.slice());
   }
