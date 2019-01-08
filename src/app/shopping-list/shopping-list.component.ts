@@ -22,7 +22,7 @@ private subscription:Subscription;
       }
     );
   }
-ngOnDestroy(){
+ngOnDestroy() {
   this.subscription.unsubscribe();
 }
 }
