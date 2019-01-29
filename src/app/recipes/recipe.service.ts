@@ -36,17 +36,17 @@ recipesChanged= new Subject<Recipe[]>();
   getRecipeByID(index:number) {
 return this.recipes[index];
   }
-  addRecipes(recipe:Recipe){
+  addRecipes(recipe:Recipe) {
     this.recipes.push(recipe);
     this.recipesChanged.next(this.recipes.slice());
   }
 
-  updateRecipe(index:number, newRecipe:Recipe){
+  updateRecipe(index:number, newRecipe:Recipe) {
     this.recipes[index]=newRecipe;
     this.recipesChanged.next(this.recipes.slice());
 
   }
-  deleteRecipe(index:number){
+  deleteRecipe(index:number) {
     this.recipes.splice(index, 1);
     this.recipesChanged.next(this.recipes.slice());
   }

@@ -31,8 +31,8 @@ export class RecipeDetailComponent implements OnInit {
       // });
        this.shoppingservice.addIngredients(this.RecipeFinallyRecived.ingredients);
     }
-    onDeleteRecipe(){
-      //console.log('delete recipe clicked');
+    onDeleteRecipe() {
+      // console.log('delete recipe clicked');
       this.recipeservice.deleteRecipe(this.id);
       this.router.navigate(['/recipes']);
     }
